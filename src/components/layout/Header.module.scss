@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  & a {
+    display: inline-block;
+    padding: 1rem 0;
+  }
+
+  &__menu-btn {
+    background: transparent;
+    padding: 1rem;
+    border: none;
+  }
+}
