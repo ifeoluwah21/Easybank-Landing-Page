@@ -64,7 +64,7 @@ const BlogPostSection = () => {
                     <p className={classes[`post__author`]}>
                         By Claire Robinson
                     </p>
-                    <h3 className={classes[`post__title`]}>Our invite -only Beta accounts are now livw!</h3>
+                    <h3 className={classes[`post__title`]}>Our invite -only Beta accounts are now live!</h3>
                     <p className={classes[`post__body`]}>
                         After a lot of hard work by the whole team, we're excited
                         to launch our closed beta. It's easy to request an invite through the site...

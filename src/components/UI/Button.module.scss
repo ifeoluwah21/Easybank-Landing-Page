@@ -2,15 +2,16 @@
   border: none;
   padding: 1rem 1.5rem;
   border-radius: 2rem;
-  background: #31d35c;
+  background: linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 50%,
+    rgba(126, 229, 255, 1) 100%
+  );
   color: hsl(0, 0%, 100%);
   font-size: 1.2rem;
   font-weight: 400;
   font-family: inherit;
   width: 13rem;
-}
-
-.intro {
   text-align: center;
   position: relative;
   left: 50%;
