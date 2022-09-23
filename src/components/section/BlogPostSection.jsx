@@ -19,7 +19,7 @@ const BlogPostSection = () => {
                     <p className={classes[`post__author`]}>
                         By Claire Robinson
                     </p>
-                    <h3 className={classes[`post__title`]}>Receive money in any currency with no fees</h3>
+                    <h3 className={classes[`post__title`]}><a href="#">Receive money in any currency with no fees</a></h3>
                     <p className={classes[`post__body`]}>
                         The world is getting smaller and we're becoming more mobile.
                         So why should you be forced to only receive money in a single...
@@ -34,7 +34,7 @@ const BlogPostSection = () => {
                     <p className={classes[`post__author`]}>
                         By Wilson Hutton
                     </p>
-                    <h3 className={classes[`post__title`]}>Treat yourself without worrying about money</h3>
+                    <h3 className={classes[`post__title`]}><a href="#">Treat yourself without worrying about money</a></h3>
                     <p className={classes[`post__body`]}>
                         Our simple budgeting feature allows you to seperate out your spending and
                         set realistic limits each month. That means you...
@@ -49,7 +49,7 @@ const BlogPostSection = () => {
                     <p className={classes[`post__author`]}>
                         By Wilson Hutton
                     </p>
-                    <h3 className={classes[`post__title`]}>Take your Easybank card wherever you go</h3>
+                    <h3 className={classes[`post__title`]}><a href="#">Take your Easybank card wherever you go</a></h3>
                     <p className={classes[`post__body`]}>
                         We want you to enjoy your travels. This is why we
                         don't charge any fees on purchases whiles you're abroad. We'll even show you...
@@ -64,7 +64,7 @@ const BlogPostSection = () => {
                     <p className={classes[`post__author`]}>
                         By Claire Robinson
                     </p>
-                    <h3 className={classes[`post__title`]}>Our invite -only Beta accounts are now live!</h3>
+                    <h3 className={classes[`post__title`]}><a href="#">Our invite -only Beta accounts are now live!</a></h3>
                     <p className={classes[`post__body`]}>
                         After a lot of hard work by the whole team, we're excited
                         to launch our closed beta. It's easy to request an invite through the site...

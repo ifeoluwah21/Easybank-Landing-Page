@@ -13,7 +13,18 @@
   font-family: inherit;
   width: 13rem;
   text-align: center;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1020px) {
+  .button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .header__btn {
+    padding: 0.5rem 1.5rem;
+  }
 }
