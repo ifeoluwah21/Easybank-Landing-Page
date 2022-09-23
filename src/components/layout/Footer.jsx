@@ -6,6 +6,7 @@ import logo from "../../assets/images/logo-white.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faYoutube, faTwitter, faPinterest, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Button from '../UI/Button';
+import Nav from './Nav';
 
 
 
@@ -26,16 +27,7 @@ const Footer = () => {
           <li className={styles["footer__social-item"]}><a href="#"><FontAwesomeIcon icon={faInstagram} className={styles["footer__icon"]} /></a></li>
         </ul>
       </nav>
-      <nav className={styles["footer__nav"]}>
-        <ul className={styles["footer__nav-list"]}>
-          <li className={styles["footer__nav-item"]}><a href="#">About Us</a></li>
-          <li className={styles["footer__nav-item"]}><a href="#">Contact</a></li>
-          <li className={styles["footer__nav-item"]}><a href="#">Blog</a></li>
-          <li className={styles["footer__nav-item"]}><a href="#">Careers</a></li>
-          <li className={styles["footer__nav-item"]}><a href="#">Support</a></li>
-          <li className={styles["footer__nav-item"]}><a href="#">Privacy Policy</a></li>
-        </ul>
-      </nav>
+      <Nav />
       <div>
         <Button>Request Invite</Button>
       </div>
