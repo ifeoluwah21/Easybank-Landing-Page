@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+
+
 import logo from "../../assets/images/logo.svg";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Overlay from "../UI/Overlay";
 import styles from './Header.module.scss'
-import MenuIcon from "../UI/MenuIcon";
+import Nav from "./Nav";
+
 const Header = () => {
+    const [toggleNav, setToggleNav] = useState(false);
+    const toggleNavHandler = () => {
+        setToggleNav(prevState => !prevState);
+    }
     return (
         <header className={styles.header}>
             <div className={styles[`header__img-wrapper`]}>
@@ -10,8 +21,10 @@ const Header = () => {
                     <img src={logo} alt="Company Logo" />
                 </a>
             </div>
-            <button title="Menu" type="button" className={styles[`header__menu-btn`]}>
-                <MenuIcon></MenuIcon>
+            {toggleNav && ReactDOM.createPortal(<Overlay toggle={toggleNavHandler} />, document.getElementById("overlay"))}
+            {toggleNav && <Nav className={`header__nav`} />}
+            <button title="Menu" type="button" onClick={toggleNavHandler} className={styles[`header__menu-btn`]}>
+                <FontAwesomeIcon icon={!toggleNav ? faBars : faClose} style={{ fontSize: `2rem` }} />
             </button>
         </header>
     );
