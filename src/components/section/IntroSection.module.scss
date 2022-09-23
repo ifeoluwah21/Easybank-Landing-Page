@@ -17,6 +17,7 @@
 
   &__article {
     width: 94%;
+    max-width: 390px;
     margin: 1.5rem auto 3rem;
     & h1 {
       font-size: 2rem;
@@ -32,6 +33,50 @@
       line-height: 1.5;
       font-weight: 300;
       padding: 1.2rem 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro-section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 75vh;
+    &__illustration-wrapper {
+      order: 2;
+      background-image: url("../../assets/images/bg-intro-desktop.svg");
+
+      background-position: center left;
+      width: 50%;
+      background-size: auto;
+      overflow-x: clip;
+      & img {
+        margin: 0;
+        position: relative;
+        width: 70%;
+        right: -15vw;
+      }
+    }
+
+    &__article {
+      width: 35%;
+      align-self: center;
+      margin-left: 8rem;
+      margin-right: 3rem;
+      margin-top: 5rem;
+      & h1 {
+        text-align: left;
+        font-size: 2.5rem;
+        font-weight: 500;
+        max-width: 300px;
+      }
+
+      & p {
+        text-align: left;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
     }
   }
 }
