@@ -1,0 +1,56 @@
+.about-section {
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
+  padding: 2rem 0.5rem;
+
+  &__about {
+    width: 95%;
+    margin-inline: auto;
+    text-align: center;
+
+    & h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      font-family: inherit;
+      color: hsl(233, 26%, 24%);
+    }
+
+    & p {
+      font-size: 1rem;
+      font-family: inherit;
+      color: hsl(233, 8%, 62%);
+      text-align: center;
+      font-weight: 400;
+      line-height: 1.5;
+      padding: 1.5rem 0;
+    }
+  }
+}
+
+.attr {
+  width: 95%;
+  margin-inline: auto;
+  text-align: center;
+  padding: 1.5rem 0;
+  &____avatar-wrapper {
+  }
+
+  &__info {
+    & h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 1.5rem 0;
+      font-family: inherit;
+      color: hsl(233, 26%, 24%);
+    }
+
+    & p {
+      font-size: 1rem;
+      font-family: inherit;
+      font-weight: 400;
+      color: hsl(233, 8%, 62%);
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+}

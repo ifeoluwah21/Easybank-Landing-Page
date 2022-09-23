@@ -1,0 +1,55 @@
+.posts-section {
+  text-align: center;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem 0;
+
+  & h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+    font-family: inherit;
+    color: hsl(233, 26%, 24%);
+  }
+}
+
+.post {
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+
+  &__img-wrapper {
+    width: 100%;
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__details {
+    padding: 1rem 1.5rem;
+    text-align: left;
+  }
+
+  &__author {
+    font-size: 0.8rem;
+    font-family: inherit;
+    font-weight: 400;
+    color: hsl(233, 8%, 62%);
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    font-weight: 300;
+    font-family: inherit;
+    color: hsl(233, 26%, 24%);
+  }
+
+  &__body {
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 400;
+    color: hsl(233, 8%, 62%);
+    line-height: 1.5;
+  }
+}
