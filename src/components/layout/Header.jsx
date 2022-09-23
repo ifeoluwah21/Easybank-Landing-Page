@@ -10,7 +10,7 @@ const Header = () => {
                     <img src={logo} alt="Company Logo" />
                 </a>
             </div>
-            <button className={styles[`header__menu-btn`]}>
+            <button title="Menu" type="button" className={styles[`header__menu-btn`]}>
                 <MenuIcon></MenuIcon>
             </button>
         </header>
