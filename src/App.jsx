@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.scss'
 import Header from './components/layout/Header';
 import IntroSection from './components/section/IntroSection';
@@ -9,7 +9,7 @@ import Footer from './components/layout/Footer';
 function App() {
 
   return (
-    <div className="App">
+    <React.Fragment>
       <Header />
       <main>
         <IntroSection />
@@ -17,7 +17,7 @@ function App() {
         <BlogPostSection />
       </main>
       <Footer></Footer>
-    </div>
+    </React.Fragment>
   )
 }
 
